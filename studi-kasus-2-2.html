@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus 2 HTML</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        td a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        td a:hover {
+            color: #ff0;
+        }
+
+        #footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Website!</h2>
+
+    <table>
+        <tr bgcolor="#000">
+            <td><a href="#">Home</a></td>
+            <td><a href="#">Blog</a></td>
+            <td><a href="#">About</a></td>
+            <td><a href="#">Contact</a></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td bgcolor="#ccc" width="1000">
+                <h3>Judul Blog</h3>
+                <img src="https://www.jagatreview.com/wp-content/uploads/2024/03/IMG-20240314-WA0010-960x720.jpg" alt=""
+                    width="200">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta quos magnam alias, ut harum
+                    possimus tempora error. Nihil possimus id iure! Laudantium, esse sit earum autem eos laborum magni?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum pariatur possimus nemo
+                    saepe
+                    quos deserunt optio dolor atque mollitia, libero laboriosam voluptas autem ipsum. Vitae esse nisi
+                    accusantium provident reprehenderit autem? At eligendi suscipit facilis soluta rem ut.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta quos magnam alias, ut harum
+                    possimus tempora error. Nihil possimus id iure! Laudantium, esse sit earum autem eos laborum magni?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quisquam molestias, temporibus saepe et
+                    explicabo minima repudiandae ducimus dolor eaque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quae? Officiis maiores temporibus
+                    repellendus, numquam laboriosam quos nisi necessitatibus sapiente earum quaerat aut quae unde amet,
+                    ratione voluptate minima? Saepe.</p>
+            </td>
+            <td bgcolor="#000000">
+                <h3 style="color:#ffffff">Galeri</h3>
+                <img src="https://www.jagatreview.com/wp-content/uploads/2024/03/IMG-20240314-WA0010-960x720.jpg" alt=""
+                    width="200">
+                <img src="https://www.jagatreview.com/wp-content/uploads/2024/03/IMG-20240314-WA0010-960x720.jpg" alt=""
+                    width="200">
+                <img src="https://www.jagatreview.com/wp-content/uploads/2024/03/IMG-20240314-WA0010-960x720.jpg" alt=""
+                    width="200">
+                <img src="https://www.jagatreview.com/wp-content/uploads/2024/03/IMG-20240314-WA0010-960x720.jpg" alt=""
+                    width="200">
+            </td>
+        </tr>
+    </table>
+
+    <div id="footer">
+        <a href="#">Footer</a>
+    </div>
+
+    <script>
+        // JavaScript for footer link
+        document.querySelector('#footer a').addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('Footer link clicked!');
+        });
+    </script>
+</body>
+
+</html>
