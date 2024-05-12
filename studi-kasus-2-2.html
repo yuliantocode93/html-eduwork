@@ -39,7 +39,7 @@
         }
 
         tr:hover {
-            background-color: #ddd;
+            background-color: #599fce;
         }
 
         td a {
@@ -48,7 +48,7 @@
         }
 
         td a:hover {
-            color: #ff0;
+            color: rgb(252, 240, 7);
         }
 
         #footer {
@@ -56,6 +56,11 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
+        }
+
+        #footer a {
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -65,10 +70,10 @@
 
     <table>
         <tr bgcolor="#000">
-            <td><a href="#">Home</a></td>
-            <td><a href="#">Blog</a></td>
-            <td><a href="#">About</a></td>
-            <td><a href="#">Contact</a></td>
+            <td id="home"><a href="#">Home</a></td>
+            <td id="blog"><a href="#">Blog</a></td>
+            <td id="about"><a href="#">About</a></td>
+            <td id="contact"><a href="#">Contact</a></td>
         </tr>
     </table>
 
@@ -112,9 +117,26 @@
 
     <script>
         // JavaScript for footer link
+
         document.querySelector('#footer a').addEventListener('click', function (event) {
             event.preventDefault();
             alert('Footer link clicked!');
+        });
+        document.querySelector('#home').addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('Home link clicked!');
+        });
+        document.querySelector('#blog').addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('Blog link clicked!');
+        });
+        document.querySelector('#about').addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('About link clicked!');
+        });
+        document.querySelector('#contact').addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('Contact link clicked!');
         });
     </script>
 </body>
